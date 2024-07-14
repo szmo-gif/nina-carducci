@@ -85,9 +85,12 @@ body {
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
-	width: 80%;
+.about-me__corpus {
+	font-family: 'Spectral';
+	font-weight: 400;
+	font-style: normal;
 	font-size: 14px;
+	width: 80%;
 }
 
 #gallery {
