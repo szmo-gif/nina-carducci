@@ -10,12 +10,26 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+	<!-- TODO : ajouter preload images -->
+
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+	<link rel="preload" href="./assets/style.min.css" as="style">
+	
+	<link rel="preload" href="./assets/bootstrap/bootstrap.bundle.min.js" as="script">
+	<link rel="preload" href="./assets/maugallery.min.js" as="script">
+	<link rel="preload" href="./assets/scripts.min.js" as="script">
+
 	<meta name="description" content="Nina Carducci - Photographe à Bordeaux - Shooting photo, album photo, retouches">
+
+	<!-- TODO : ajouter meta: OG -->
 
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
+
+	<!-- TODO : ajouter donées stucturées -->
+
 </head>
 
 <body>
@@ -101,6 +115,9 @@
 	</div>
 	<div id="gallery">
 		<h2 class="title">Portfolio</h2>
+
+	<!-- TODO : ajouter alt image-->
+
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item"
@@ -199,10 +216,10 @@
 		</div>
 	</div>
 </body>
-<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./assets/maugallery.js"></script>
-<script src="./assets/scripts.js"></script>
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/maugallery.min.js"></script>
+<script src="./assets/scripts.min.js"></script>
 
 </html>
