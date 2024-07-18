@@ -10,7 +10,21 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<!-- TODO : ajouter preload images -->
+	<link rel="preload" href="assets/images/webp/instagram.webp" as="image" alt = "logo instagram">
+	<link rel="preload" href="./assets/images/slider-webp/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image" alt="homme d'affaire traversant un passage piéton">
+	<link rel="preload" href="./assets/images/slider-webp/nicholas-green-nPz8akkUmDI-unsplash.webp" as="image" alt="foule de spectateur avec le bras en l'air">
+	<link rel="preload" href="./assets/images/slider-webp/edward-cisneros-3_h6-1NPDGw-unsplash.webp" as="image" alt="couple de mariés s'embrassant en dansant entouré de gens">
+	<link rel="preload" href="./assets/images/webp/nina.webp" as="image" alt="Nina Carducci">
+	<link rel="preload" href="./assets/images/gallery-webp/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" as="image" alt="photo d'un concert pris dans une fosse">
+	<link rel="preload" href="./assets/images/gallery-webp/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photo d'un homme d'affaire posant les bras croisés" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photo d'une femme souriante devant un ordinateur" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photo de mains se touchant le bout des doigts" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photo d'un homme fermant les yeux à cause de la lumière" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photo de jeune mariés souriant en marchant dans l'herbe" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photo d'une femme à lunette" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="photo d'un chanteur avec le bras en l'air" as="image">
+	<link rel="preload" href="./assets/images/gallery-webp/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photo d'une femme souriante devant un ordinateur">
+	<link rel="preload" href="./assets/images/webp/camera.webp" as="image" alt="un appareil photo">
 
 	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
 	<link rel="preload" href="./assets/style.min.css" as="style">
@@ -28,7 +42,7 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 
-	<!-- TODO : ajouter donées stucturées -->
+	<!-- TODO : ajouter donées stucturées en json -->
 
 </head>
 
@@ -121,23 +135,23 @@
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery-webp/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="..." />
+					src="./assets/images/gallery-webp/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photo d'un concert pris dans une fosse" />
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery-webp/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" />
+					src="./assets/images/gallery-webp/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photo d'un homme d'affaire posant les bras croisés" />
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery-webp/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" />
+					src="./assets/images/gallery-webp/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photo d'une femme souriante devant un ordinateur" />
 				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery-webp/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" />
+					src="./assets/images/gallery-webp/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photo de mains se touchant le bout des doigts"/>
 				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery-webp/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" />
+					src="./assets/images/gallery-webp/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photo d'un homme fermant les yeux à cause de la lumière"/>
 				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery-webp/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" />
+					src="./assets/images/gallery-webp/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photo de jeune mariés souriant en marchant dans l'herbe"/>
 				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery-webp/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" />
+					src="./assets/images/gallery-webp/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photo d'une femme à lunette"/>
 				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery-webp/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" />
+					src="./assets/images/gallery-webp/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="photo d'un chanteur avec le bras en l'air"/>
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery-webp/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" />
+					src="./assets/images/gallery-webp/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photo d'une femme souriante devant un ordinateur"/>
 			</div>
 		</div>
 		<figure class="quote">
